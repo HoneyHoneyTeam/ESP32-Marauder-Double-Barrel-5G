@@ -24,7 +24,7 @@ Due to the limitations of the ESP32 chipset, the Marauder can currently only han
 
 <br/>
 
-## Specification of the ESP32 Marauder Double Barrel
+## Specification of the ESP32 Marauder Double Barrel 5G
 
 
 - **The first Marauder comes with:**
@@ -37,21 +37,27 @@ Due to the limitations of the ESP32 chipset, the Marauder can currently only han
   	- This part of the device can funcation as a standalone device (i.e., you can use it without Flipper Zero).
    	- The hardware version of this marauder is V6
 
-- **The second Marauder is controlled by the Flipper Zero, it comes with:**
-  	- ESP32-S2 chipset with an external antenna
-   	- Onboard GPS access
-   	- Firmware updatea via Flipper or USBC on the left
+- **The BW16 / RTL8720DN chipset is controlled by the Flipper Zero, it comes with**
+  	- BW16 / RTL8720DN chipset with an external antenna
+  	- Dual-Band 5Ghz + 2.4Ghz scanning, de-authentication
+  	- 4pins GPIO 4pin GPIO (3.3V/Tx/Rx/Gnd) for firmware update, or switch different firmware
+  	- FAP <Flipper App Package> installation is needed, aka copying the FAP into Flipper SD card
 
 - **Others:**
-	- Dual USB-C Ports for charging (top) and firmware updates (left).
-	- CC1101 Chipset(433 MHz), supporting up to 10 dB output per antenna.
-	- GPS Chipset. GPS data is accessible to both Marauders.
-	- Four Antennas: 2 x 3 dB for Wi-Fi (Dual Marauder), 1 x 20 dB for GPS, and 1 x 3 dB for SubGhz 433 MHz.
-	- Toggle on the left for switching GPS power supply ( either by Flipper or device battery)
-	- Full 3D-Printed Enclosure/Case is also included.
+	- USB-C Ports for onboard battery charging (top).
+ 	- CC1101 Chipset(433 MHz), supporting up to 10 dB output per antenna.
+  	- GPS Chipset. GPS data is accessible to both Marauders.
+  	- Four Antennas: 2 x 3 dB for Wi-Fi (Dual Marauder), 1 x 1 dB for GPS, and 1 x 3 dB for SubGhz 433 MHz.
+  	- Toggle on the left for switching GPS power supply ( either by Flipper or device battery)
+  	- Full 3D-Printed Enclosure/Case is also included.
+
 
 <br/>
-  
+
+also, we have aggreggive the info between Double Barrel and its 5G counterpart for your reference. 
+
+![Alt text](Assets/images/front.with.laydown.jpg)
+
 ## Pre-flight Check / Settings Before First Use 
 
 > [!NOTE]
@@ -77,12 +83,16 @@ Due to the limitations of the ESP32 chipset, the Marauder can currently only han
 
 <br/>
 
-### 2nd Set Marauder
+### The BW16 part
 
-- The second set Marauder of the Double Barrel utilise UART 15 and 16 for communicating with Flipper, hence it is necessary to switch from the default 13 & 14 GPIO to 15 & 16
+A. The BW16 part use UART 15 and 16 for communicating with Flipper, hence it is necessary to switch from the default 13 & 14 GPIO to 15 & 16
 	1. On your Flipper Zero, navigate to the main menu.
 	2. Go to: **Momentum** -> **Protocols** -> **GPIO Pins** -> **ESP32/8266 UART**.
 	3. Select **Extra 15, 16**."
+B. Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
+	1. Download the FAP file from there. 
+ 	2. Copy the file into <you SD card/Apps/GPIO> directory. You could use Micro SD card reader or qFlipper App for the job. 
+  	3. 
 
 <br/>
 
