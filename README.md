@@ -128,15 +128,14 @@ B. Then, The FAP file need to copy into Flipper SD card, as showed in the follow
    
 6. In a minute, The unit should restart itself and you are golden.
 
+</details>
+</br>
 
+## How to upgrade BW16 firmware
+<details>
 
-### 2nd Set Marauder
+Due to the ongoing development of BW16 firmware, an [ESP32 programmer](https://www.tindie.com/products/39033/) is included in Double Barrel 5G package, which we are going to utilise in the following proceduce. 
 
-
-> To flash / update the Marauder onto the 2nd Marauder, we suggest using **Google Chrome**.
-
-> On the back of the Double Barrel, you will find **two boot buttons**:
->	- **Middle Button**: This is the boot button for the 1st Marauder (the one with the screen).
 >	- **Side/Outer Button**: This button, located closer to the edge/side of the device, is the boot button for the 2nd Marauder with ESP32-S2.
 
 
