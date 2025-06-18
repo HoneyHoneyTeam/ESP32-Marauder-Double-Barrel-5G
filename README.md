@@ -46,7 +46,7 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
   	- FAP <Flipper App Package> installation is needed, aka copying the FAP into Flipper SD card
 
 - **Others:**
-	- USB-C Ports for onboard battery charging (top).
+	- USB-C Ports for onboard battery charging (A).
  	- CC1101 Chipset(433 MHz), supporting up to 10 dB output per antenna.
   	- GPS Chipset. GPS data is accessible to both Marauders.
   	- Four Antennas: 2 x 3 dB for Wi-Fi (Dual Marauder), 1 x 1 dB for GPS, and 1 x 3 dB for SubGhz 433 MHz.
@@ -96,14 +96,14 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 - Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
 	1. Download the FAP file from [here](Assets/5G.fap) (Right Click and Save AS)
  	2. Copy the file into <**you SD card/Apps/GPIO**> directory. You could do so via a Micro SD card reader, or via qFlipper App. 
-  	3. Put the SD card back into Flipper, and you should be able to find an APP call xxx in through Flipper manual **APPS** -> **GPIO**
+  	3. Put the SD card back into Flipper, and you should be able to find an APP call xxx in through Flipper manual **APPS** -> **GPIO** -> **5G wifi deauth**
   	   
 <br/>
 
 ### GPS
 
-- To use the GPS function on the Flipper Zero, please see the steps below.
-  	1. Set the **bottom switch** on the left side of the Double Barrel (labeled <**C**>) to the **DOWN** position.
+- To use the GPS function of Double Barrel 5G via the Flipper Zero, please see the steps below.
+  	1. Set the **bottom switch** on the left side of the Double Barrel 5G (labeled <**C**>) to the **DOWN** position.
 		- UP position: GPS is powered by the Double Barrel's onboard 800mAh battery.
   		- DOWN position: GPS is powered by the Flipper Zero's battery.
   	2. On your Flipper Zero, navigate to the main menu.
@@ -125,20 +125,20 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 
 2. Download the **V6** firmware file, which is usual inclued < **_new_hardware.bin/_v6.bin** > in the name, from [Marauder website](https://github.com/justcallmekoko/ESP32Marauder/releases).
    
-3. **PLEASE PLEASE PLEASE double check which version of Marauder you have downladed and used. Wrong firmware file might brick the device**
+3. **PLEASE PLEASE PLEASE double check which version of Marauder you have downladed and used. 
    
-4. Copy the file to the Micro SD card and rename it as< **update.bin** >. Then, insert the Micro SD card back into the Marauder Unit.
+4. When you have checked the bin file, copy the file to the Micro SD card and rename it as< **update.bin** >. Then, insert the Micro SD card back into the Marauder Unit.
 
-5. Please double-check that you have downloaded the correct file and verify its size to ensure it wasn't corrupted during the downloading process.
+5. Please double-check that you have downloaded the correct file and verify its size to ensure it wasn't corrupted during the download process. Using the wrong or a corrupted firmware file may brick the device. If that happen, pleases check [this tutorial of how to revive / recovery the device](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G). 
    
-6. Turn on the Marauder Unit Navigating menu as following: < **Device** > => < **Update firmware** > => < **SD Update** > => < **Yes** >. 
+6. Turn on the Marauder Unit, Navigating menu as following: < **Device** > => < **Update firmware** > => < **SD Update** > => < **Yes** >. In rare cases, Marauder may repeatedly show that the firmware file is corrupted and exit the update process shortly, no matter how many times you try. We suggest using a new microSD card in such cases.
    
 7. In a minute, The unit should restart itself and you are golden.
 
 </details>
 </br>
 
-## How to switch firmware, such as from Marauder to Bruce, or vice versa
+## How to switch firmware for the standalone section, such as from Marauder to Bruce, or vice versa
 <details>
 <summary> Click the Triangle for more details   </summary>
 
@@ -146,13 +146,13 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 > - Based on our testing (18.June.2025), Bruce firmware can be load into the standalone section of Double Barrel / Double Barrel 5G. but it is still a bit buggy, and not 100% of Bruce funcationality is fully supported
 
 
-1. [an ESP32 programmer](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G) is included in the package. Connect the programmer to the GPIO port located in the lower-right corner of the device, as shown in the following picture.
+1. [an ESP32 programmer](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G) is included in the package. Connecting the programmer to the GPIO port located in the lower-right corner of the device, as shown in the following picture.
 
 ![Alt text](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G/blob/main/Assets/images/GPIO.Double.jpg)
 
 2. Using Google Chrome, go to [Bruce.Computer website](https://bruce.computer/flasher). At the bottom of the page, select '**Latest Release**' -> '**Custom Boards**' -> '**Marauder V4 or V6**' -> '**Install**'
    
-3. After that, while holding down the boot button on the back of the device using a pin or the metal stylus included with the Double Barrel, connect the ESP32 programmer to your PC's USB port. This will put the device into bootloader/download mode, as shown in the following picture.
+3. After that, while holding down the boot button (Marked as 2) on the back of the device using a pin or the metal stylus included with the Double Barrel, connect the ESP32 programmer to your PC's USB port. This will put the device into bootloader/download mode, as shown in the following picture.
 
 ![Alt text](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G/raw/main/Assets/images/bootDouble.jpg)
    
@@ -160,45 +160,20 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
    
 5. After about a minute, the website should indicate that the process is complete. You can then disconnect the device—now it's time to explore!
 
+6. What happen if you like to reverse back to Marauder Firmware? Check [this tutorial](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G)
+
+
 </details>
 </br>
 
-## How to upgrade BW16 firmware
+## How to upgrade BW16 firmware 
 <details>
 
-Due to the ongoing development of BW16 firmware, an [ESP32 programmer](https://www.tindie.com/products/39033/) is included in Double Barrel 5G package, which we are going to utilise in the following proceduce. 
+When we shipd out the Double Barrel 5G, the BW16 has been pre-loaded one of the 5G firmware. This firmware is compatiable with the FAP call [ 5G wifi deauth ](https://github.com/HoneyHoneyTeam/ESP32-Marauder-Double-Barrel-5G/blob/main/Assets/5G.fap) 
 
-- **Side/Outer Button**: This button, located closer to the edge/side of the device, is the boot button for the 2nd Marauder with ESP32-S2.
+If you would like to explore more on the 5G side of the business, you could load BW16 with [delfyrtl firmware and its compatiable flipper APP](https://github.com/gorebrau/delfyRTL) 
 
-
-1. Open the Web Flasher called < ESPWebTool > [https://esp.huhn.me/](https://esp.huhn.me).
-   
-2. To start the 2nd Marauder in Bootloader mode:
-
-	- Use the metal stylus to **press and hold the boot button** for the 2nd Marauder (this is the button closer to the side/edge of the Double Barrel).
-	- While still **holding the boot button, connect the USB-C cable** to the Double Barrel.
-	- The board will then launch into Bootloader mode instead of starting up normally. You can now release the boot button.
-
-3. Then, navigate to https://esp.huhn.me/,
-	- On the webpage, click the [ **Connect** ] button.
- 	- A pop-up window will appear, select the option similar to [ **USB Serial (ComXxX) - Paired** ]
-  	- Then, click [ **Connect** ] button within the pop-up window.
-   
-4. Navigate to the Firmware Page:
-	- Go to the [ESP32 Marauder firmware update guide:](https://github.com/justcallmekoko/ESP32Marauder/wiki/update-firmware#using-spacehuhn-web-update). 
-	- On this page, find / search the section specifically for the "Flipper Zero Wifi Dev Board", like the following picture. This is crucial for getting the correct files.
-	- From the "Flipper Zero Wifi Dev Board" section, download the following four (4) files:
-	- Bootloader, Partitions, Boot App, Firmware(Look for a .bin file that specifically includes _rev_feather.bin in its name for the firmware)
-
-![Alt text](Assets/images/FlipperZeroWiFiDevBoard.png)
-
-5. Return to the [HESP.huhn.me](https://esp.huhn.me/). You will now select the files you downloaded in the previous steps. Carefully match each downloaded file (Bootloader, Partitions, Boot App, and Firmware) to its correct field on the webpage, as shown in the picture below/adjacent.
-
-![Alt text](Assets/images/ESPWebTool.png)
-
-6. Please double check everything before clicking [ **PROGRAM** ] bottom.
-    
-7. In a minute then you are golden. 
+**The Delfyrtl GitHub page has a clear description of how to load the firmware, but we will be updating our own version of the loading procedure soon. Please check back in a few days for the latest instructions.  - 19.06.2025 by Anson**
 
 </details>
 
@@ -225,6 +200,7 @@ To all our clients who purchased items from our shop, whether from Etsy, eBay, T
 
 ## Credibility
 - Credit of Marauder Firmware goes to <ins>@JustCallmeCoco</ins>
+- Credit of delfyRTL goest to [gorebrau](https://github.com/gorebrau/delfyRTL)
 
 <br/>
 
