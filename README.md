@@ -20,9 +20,9 @@
 ## What is ESP32 Marauder - Double Barrel 5G? 
 First of all, what is the [ESP32 Marauder Double Barrel](https://github.com/HoneyHoneyTeam/ESP32-Marauder-Double-Barrel)? 
 
-"Double Barrel" refers to the fact that the device runs two standalone Marauders simultaneously. The first Marauder features a 2.8-inch screen, an onboard 800mAh battery, GPS, and a microSD card slot. The second Marauder is connected to and controlled by the Flipper Zero.
+"Double Barrel" refers to the fact that the device runs two sperated Marauders simultaneously. The first Marauder features a 2.8-inch screen, an onboard 800mAh battery, GPS, and a microSD card slot. The second Marauder is connected to and controlled by the Flipper Zero.
 
-Due to limitations of the this particular ESP32 chipset, the Marauder currently supports only 2.4 GHz Wi-Fi. However, recent developments with the BW16 chipset have shown promising results to 5GHz Wifi. This is exactly what we have implenmented on the 5G cousin of the Double Barrel 
+Due to limitations of the this particular ESP32 chipset, the Marauder currently supports only 2.4 GHz Wi-Fi. However, recent developments with the BW16 Kit / RTL8720DN chipset have shown promising results to 5GHz Wifi. This is exactly what we have implenmented on the 5G cousin of the Double Barrel. 
 
 <br/>
 
