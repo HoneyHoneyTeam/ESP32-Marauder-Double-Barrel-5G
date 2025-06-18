@@ -54,19 +54,19 @@ Due to the limitations of the ESP32 chipset, the Marauder can currently only han
 
 <br/>
 
-also, we have aggreggive the info between Double Barrel and its 5G counterpart for your reference. 
+Also, we have aggregated the information between Double Barrel and its 5G counterpart for your reference.
 
 ![Alt text](Assets/images/front.with.laydown.jpg)
 
 ## Pre-flight Check / Settings Before First Use 
 
 > [!NOTE]
-> All our products are thoroughly checked and configured prior to shipping. While most of our products are plug-and-play, a few specific settings need to be adjusted on your Flipper Zero to ensure proper communication with the Double Barrel.
+> All our products are thoroughly checked and configured prior to shipping. While most of our products are plug-and-play, a few specific settings need to be adjusted on your Flipper Zero to ensure proper communication with the Double Barrel 5G.
 
 <br/>
 
 ### SubGhz <433mhz>
-- **No initial setup is required for SubGhz chipset detection**. The Flipper Zero automatically recognizes an external SubGhz chipset when it connect to The Double Barrel. 
+- **No initial setup is required for SubGhz chipset detection**. The Flipper Zero automatically recognizes an external SubGhz chipset when it connect to The Double Barrel 5G. 
 - To confirm if the Flipper Zero is using the external SubGhz chipset, or to switch to it manually:
 	1. On your Flipper Zero, navigate to the main menu.
 	2. Go to: **Sub-Ghz** -> **Radio Settings** -> **Module**.
@@ -76,10 +76,11 @@ also, we have aggreggive the info between Double Barrel and its 5G counterpart f
 
 <br/>
 
-### 1st Set Marauder (The one with 2.8inch Touch Screen)
+### 1st Set Marauder / Standalone section (The one with 2.8inch Touch Screen)
 
 - No initial setup is required
 - Turn ON or OFF via the switch located on the right side of the Double Barrel / (labeled <**D**>)
+- If you would like to update the firmware, please remeber to download **V6 version** of the firmware BIN file
 
 <br/>
 
@@ -90,10 +91,9 @@ A. The BW16 part use UART 15 and 16 for communicating with Flipper, hence it is 
 	2. Go to: **Momentum** -> **Protocols** -> **GPIO Pins** -> **ESP32/8266 UART**.
 	3. Select **Extra 15, 16**."
 B. Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
-	1. Download the FAP file from there. 
+	1. Download the FAP file from [here]()
  	2. Copy the file into <you SD card/Apps/GPIO> directory. You could use Micro SD card reader or qFlipper App for the job. 
-  	3. 
-
+  	3. Put the SD card back into Flipper, and you should be able to find an APP call xxx in through Flipper manual **APPS** -> **GPIO** 
 <br/>
 
 ### GPS
