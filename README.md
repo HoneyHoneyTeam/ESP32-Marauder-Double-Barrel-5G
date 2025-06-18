@@ -91,16 +91,17 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 - The BW16 part use UART 15 and 16 for communicating with Flipper, hence it is necessary to switch from the default 13 & 14 GPIO to 15 & 16.
 	1. On your Flipper Zero, navigate to the main menu.
 	2. Go to: **Momentum** -> **Protocols** -> **GPIO Pins** -> **ESP32/8266 UART**.
-	3. Select **Extra 15, 16**."
+	3. Select **Extra 15, 16**.
 
 - Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
-	1. Download the FAP file from [here]((Assets/files/5G.fap)
- 	2. Copy the file into <you SD card/Apps/GPIO> directory. You could use Micro SD card reader or qFlipper App for the job. 
+	1. Download the FAP file from [here](Assets/files/5G.fap)
+ 	2. Copy the file into <**you SD card/Apps/GPIO**> directory. You could do so via a Micro SD card reader, or via qFlipper App. 
   	3. Put the SD card back into Flipper, and you should be able to find an APP call xxx in through Flipper manual **APPS** -> **GPIO**
   	   
 <br/>
 
 ### GPS
+
 - To use the GPS function on the Flipper Zero, please see the steps below.
   	1. Set the **bottom switch** on the left side of the Double Barrel (labeled <**C**>) to the **DOWN** position.
 		- UP position: GPS is powered by the Double Barrel's onboard 800mAh battery.
@@ -142,7 +143,7 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 
 Due to the ongoing development of BW16 firmware, an [ESP32 programmer](https://www.tindie.com/products/39033/) is included in Double Barrel 5G package, which we are going to utilise in the following proceduce. 
 
->	- **Side/Outer Button**: This button, located closer to the edge/side of the device, is the boot button for the 2nd Marauder with ESP32-S2.
+- **Side/Outer Button**: This button, located closer to the edge/side of the device, is the boot button for the 2nd Marauder with ESP32-S2.
 
 
 1. Open the Web Flasher called < ESPWebTool > [https://esp.huhn.me/](https://esp.huhn.me).
