@@ -96,7 +96,8 @@ A. The BW16 part use UART 15 and 16 for communicating with Flipper, hence it is 
  
  
 B. Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
-	1. Download the FAP file from [here]()
+
+	1. Download the FAP file from [here]((Assets/files/5G.fap)
  	2. Copy the file into <you SD card/Apps/GPIO> directory. You could use Micro SD card reader or qFlipper App for the job. 
   	3. Put the SD card back into Flipper, and you should be able to find an APP call xxx in through Flipper manual **APPS** -> **GPIO** 
 <br/>
