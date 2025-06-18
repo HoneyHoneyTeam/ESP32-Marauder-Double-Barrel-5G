@@ -88,18 +88,16 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 
 ### The BW16 part
 
-A. The BW16 part use UART 15 and 16 for communicating with Flipper, hence it is necessary to switch from the default 13 & 14 GPIO to 15 & 16
-	
- 	1. On your Flipper Zero, navigate to the main menu.
+- The BW16 part use UART 15 and 16 for communicating with Flipper, hence it is necessary to switch from the default 13 & 14 GPIO to 15 & 16.
+	1. On your Flipper Zero, navigate to the main menu.
 	2. Go to: **Momentum** -> **Protocols** -> **GPIO Pins** -> **ESP32/8266 UART**.
 	3. Select **Extra 15, 16**."
- 
- 
-B. Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
 
+- Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
 	1. Download the FAP file from [here]((Assets/files/5G.fap)
  	2. Copy the file into <you SD card/Apps/GPIO> directory. You could use Micro SD card reader or qFlipper App for the job. 
-  	3. Put the SD card back into Flipper, and you should be able to find an APP call xxx in through Flipper manual **APPS** -> **GPIO** 
+  	3. Put the SD card back into Flipper, and you should be able to find an APP call xxx in through Flipper manual **APPS** -> **GPIO**
+  	   
 <br/>
 
 ### GPS
@@ -126,13 +124,15 @@ B. Then, The FAP file need to copy into Flipper SD card, as showed in the follow
 
 2. Download the **V6** firmware file, which is usual inclued < **_new_hardware.bin/_v6.bin** > in the name, from [Marauder website](https://github.com/justcallmekoko/ESP32Marauder/releases).
    
-3. Copy the file to the Micro SD card and rename it as< **update.bin** >. Then, insert the Micro SD card back into the Marauder Unit.
+3. **PLEASE PLEASE PLEASE double check which version of Marauder you have downladed and used. Wrong firmware file might brick the device**
+   
+4. Copy the file to the Micro SD card and rename it as< **update.bin** >. Then, insert the Micro SD card back into the Marauder Unit.
 
-4. Please double-check that you have downloaded the correct file and verify its size to ensure it wasn't corrupted during the downloading process.
+5. Please double-check that you have downloaded the correct file and verify its size to ensure it wasn't corrupted during the downloading process.
    
-5. Turn on the Marauder Unit Navigating menu as following: < **Device** > => < **Update firmware** > => < **SD Update** > => < **Yes** >. 
+6. Turn on the Marauder Unit Navigating menu as following: < **Device** > => < **Update firmware** > => < **SD Update** > => < **Yes** >. 
    
-6. In a minute, The unit should restart itself and you are golden.
+7. In a minute, The unit should restart itself and you are golden.
 
 </details>
 </br>
