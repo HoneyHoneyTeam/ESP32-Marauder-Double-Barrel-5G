@@ -18,9 +18,11 @@
 
 
 ## What is ESP32 Marauder - Double Barrel 5G? 
-First of all, what is the ESP32 Marauder Double Barrel? "Double Barrel" refers to the fact that the device runs two standalone Marauders simultaneously. The first Marauder features a 2.8-inch screen, an onboard 800mAh battery, GPS, and a microSD card slot. The second Marauder is connected to and controlled by the Flipper Zero.
+First of all, what is the [ESP32 Marauder Double Barrel](https://github.com/HoneyHoneyTeam/ESP32-Marauder-Double-Barrel)? 
 
-Due to the limitations of the ESP32 chipset, the Marauder can currently only handle 2.4 GHz Wi-Fi. However, recent developments with the BW16 chipset have shown promising results for 5G networks. This is exactly what we implemented in the 5G cousin of the Double Barrel.
+"Double Barrel" refers to the fact that the device runs two standalone Marauders simultaneously. The first Marauder features a 2.8-inch screen, an onboard 800mAh battery, GPS, and a microSD card slot. The second Marauder is connected to and controlled by the Flipper Zero.
+
+Due to limitations of the this particular ESP32 chipset, the Marauder currently supports only 2.4 GHz Wi-Fi. However, recent developments with the BW16 chipset have shown promising results to 5GHz Wifi. This is exactly what we have implenmented on the 5G cousin of the Double Barrel 
 
 <br/>
 
@@ -54,7 +56,7 @@ Due to the limitations of the ESP32 chipset, the Marauder can currently only han
 
 <br/>
 
-Also, we have aggregated the information between Double Barrel and its 5G counterpart for your reference.
+Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 
 ![Alt text](Assets/images/In.Comparison.png)
 
@@ -87,9 +89,12 @@ Also, we have aggregated the information between Double Barrel and its 5G counte
 ### The BW16 part
 
 A. The BW16 part use UART 15 and 16 for communicating with Flipper, hence it is necessary to switch from the default 13 & 14 GPIO to 15 & 16
-	1. On your Flipper Zero, navigate to the main menu.
+	
+ 	1. On your Flipper Zero, navigate to the main menu.
 	2. Go to: **Momentum** -> **Protocols** -> **GPIO Pins** -> **ESP32/8266 UART**.
 	3. Select **Extra 15, 16**."
+ 
+ 
 B. Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
 	1. Download the FAP file from [here]()
  	2. Copy the file into <you SD card/Apps/GPIO> directory. You could use Micro SD card reader or qFlipper App for the job. 
