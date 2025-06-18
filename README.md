@@ -1,7 +1,7 @@
 # ESP32 Marauder - Double Barrel 5G User Manual
 
-![Alt text](Assets/images/front.with.Flipper.jpg)
 ![Alt text](Assets/images/Back.with.description.jpg)
+![Alt text](Assets/images/front.with.Flipper.jpg)
 ![Alt text](Assets/images/standalone.Bruce.with.description.jpg)
 ![Alt text](Assets/images/top.jpg)
 ![Alt text](Assets/images/right.jpg)
