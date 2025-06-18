@@ -152,13 +152,13 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 
 2. Using Google Chrome, go to [Bruce.Computer website](https://bruce.computer/flasher). At the bottom of the page, select '**Latest Release**' -> '**Custom Boards**' -> '**Marauder V4 or V6**' -> '**Install**'
    
-3. After that, While holding down the boot button on the back of the device by using a pin or the metal stylus included with the Double Barrel, connect the ESP32 programmer to your PC USB port. This action will put the device into bootloader/downloading mode, as shown in the follow picture
+3. After that, while holding down the boot button on the back of the device using a pin or the metal stylus included with the Double Barrel, connect the ESP32 programmer to your PC's USB port. This will put the device into bootloader/download mode, as shown in the following picture.
 
 ![Alt text](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G/raw/main/Assets/images/bootDouble.jpg)
    
-4. if everything is right, you should able to select the COM device from the prompt windows from the Bruce website, and let the website handle the rest of the work.
+4. If everything is set up correctly, you should be able to select the COM port from the prompt window on the Bruce website. The website will handle the rest of the process automatically.
    
-5. In a minute or so, the website should show the process is done and you can discounect the device. Now it is the time to explore. 
+5. After about a minute, the website should indicate that the process is complete. You can then disconnect the device—now it's time to explore!
 
 </details>
 </br>
