@@ -94,7 +94,7 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 	3. Select **Extra 15, 16**.
 
 - Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
-	1. Download the FAP file from [here](Assets/5G.fap)
+	1. Download the FAP file from [here](Assets/5G.fap) (Right Click and Save AS)
  	2. Copy the file into <**you SD card/Apps/GPIO**> directory. You could do so via a Micro SD card reader, or via qFlipper App. 
   	3. Put the SD card back into Flipper, and you should be able to find an APP call xxx in through Flipper manual **APPS** -> **GPIO**
   	   
