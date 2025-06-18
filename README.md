@@ -1,11 +1,11 @@
 # ESP32 Marauder - Double Barrel 5G User Manual
 
-![Alt text](Assets/images/Front.with.jpg)
-![Alt text](Assets/images/Back.with.jpg)
-![Alt text](Assets/images/left.without.jpg)
-![Alt text](Assets/images/right.without.jpg)
-![Alt text](Assets/images/front.with.no.FZ.jpg)
-![Alt text](Assets/images/front.with.laydown.jpg)
+![Alt text](Assets/images/front.with.Flipper.jpg)
+![Alt text](Assets/images/Back.with.description.jpg)
+![Alt text](Assets/images/standalone.Bruce.with.description.jpg)
+![Alt text](Assets/images/top.jpg)
+![Alt text](Assets/images/right.jpg)
+![Alt text](Assets/images/left.jpg)
 
 > [!NOTE]
 > - Update: 17 June 2025 by John @ Honey Honey Team
