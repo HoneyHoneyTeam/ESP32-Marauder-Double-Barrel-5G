@@ -138,6 +138,31 @@ Here is the comparison between ESP32 Double Barrel and its 5G counterpart
 </details>
 </br>
 
+## How to switch firmware, such as from Marauder to Bruce, or vice versa
+<details>
+<summary> Click the Triangle for more details   </summary>
+
+> [!NOTE]
+> - Based on our testing (18.June.2025), Bruce firmware can be load into the standalone section of Double Barrel / Double Barrel 5G. but it is still a bit buggy, and not 100% of Bruce funcationality is fully supported
+
+
+1. [an ESP32 programmer](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G) is included in the package. Connect the programmer to the GPIO port located in the lower-right corner of the device, as shown in the following picture.
+
+![Alt text](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G/blob/main/Assets/images/GPIO.Double.jpg)
+
+2. Using Google Chrome, go to [Bruce.Computer website](https://bruce.computer/flasher). At the bottom of the page, select '**Latest Release**' -> '**Custom Boards**' -> '**Marauder V4 or V6**' -> '**Install**'
+   
+3. After that, While holding down the boot button on the back of the device by using a pin or the metal stylus included with the Double Barrel, connect the ESP32 programmer to your PC USB port. This action will put the device into bootloader/downloading mode, as shown in the follow picture
+
+![Alt text](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G/raw/main/Assets/images/bootDouble.jpg)
+   
+4. if everything is right, you should able to select the COM device from the prompt windows from the Bruce website, and let the website handle the rest of the work.
+   
+5. In a minute or so, the website should show the process is done and you can discounect the device. Now it is the time to explore. 
+
+</details>
+</br>
+
 ## How to upgrade BW16 firmware
 <details>
 
