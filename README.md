@@ -151,7 +151,7 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
 
 2. Using Google Chrome, go to [Bruce.Computer website](https://bruce.computer/flasher). At the bottom of the page, select '**Latest Release**' -> '**Custom Boards**' -> '**Marauder V4 or V6**' -> '**Install**'
    
-3. After that, while holding down the boot button (Marked as 2) on the back of the device using a pin or the metal stylus included with the Double Barrel, connect the ESP32 programmer to your PC's USB port. This will put the device into bootloader/download mode, as shown in the following picture.
+3. After that, while **holding down the boot button** (Marked as 2) on the back of the device using a pin or the metal stylus included with the Double Barrel, **connect** the ESP32 programmer to your PC's USB port. This will put the device into bootloader/download mode, as shown in the following picture.
 
 ![Alt text](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G/raw/main/Assets/images/bootDouble.jpg)
    
