@@ -201,9 +201,10 @@ To all our clients who purchased items from our shop, whether from Etsy, eBay, T
 
 ## Credibility
 - Credit of Marauder Firmware goes to <ins>@JustCallmeCoco</ins>
-- Credit of delfyRTL goest to [gorebrau](https://github.com/gorebrau/delfyRTL)
+- Credit of delfyRTL goes to [gorebrau](https://github.com/gorebrau/delfyRTL)
+- Credit of Bruce firmware goest to [Bruce.computer](https://bruce.computer/) 
 
 <br/>
 
 ## Metadata / keywords / about for bots ##
-flipper zero, flipper, wifi board, marauder, network security, esp32, cc1101, nrf24, subghz, 2.4ghz, wifi, GPS
+flipper zero, flipper, wifi board, marauder,5G wifi, bw16, network security, esp32, cc1101, nrf24, subghz, 2.4ghz, wifi, GPS
