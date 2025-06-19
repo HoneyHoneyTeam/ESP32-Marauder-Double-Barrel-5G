@@ -174,7 +174,7 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
 
 3. If you would like to explore more on the 5G side of the business, you could load BW16 with [delfyrtl firmware and its compatiable flipper APP](https://github.com/gorebrau/delfyRTL) 
 
-**The Delfyrtl GitHub page has a clear description of how to load the firmware, but we will be updating our own version of the loading procedure soon. Please check back in a few days for the latest instructions.  - 19.06.2025 by Anson**
+4. **The Delfyrtl GitHub page has a clear description of how to load the firmware, but we will be updating our own version of the loading procedure soon. Please check back in a few days for the latest instructions.  - 19.06.2025 by Anson**
 
 </details>
 
