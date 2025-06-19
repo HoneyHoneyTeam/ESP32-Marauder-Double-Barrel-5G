@@ -56,8 +56,6 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
 
 <br/>
 
-Here is the comparison between ESP32 Double Barrel and its 5G counterpart
-
 ![Alt text](Assets/images/In.Comparison.png)
 
 ## Pre-flight Check / Settings Before First Use 
