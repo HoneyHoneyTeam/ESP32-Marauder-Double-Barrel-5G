@@ -44,6 +44,7 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
   	- Dual-Band 5Ghz + 2.4Ghz scanning, de-authentication
   	- 4pins GPIO 4pin GPIO (3.3V/Tx/Rx/Gnd) for firmware update, or switch different firmware
   	- FAP <Flipper App Package> installation is needed, aka copying the FAP into Flipper SD card
+  	- More info regarding the funcationality, please check <How to upgrade BW16 firmware > section of this manual
 
 - **Others:**
 	- USB-C Ports for onboard battery charging (A).
@@ -140,10 +141,8 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
 <details>
 <summary> Click the Triangle for more details</summary>
 
-> [!NOTE]
-> Based on our testing (18.June.2025), Bruce firmware can be load into the standalone section of Double Barrel / Double Barrel 5G. but it is still a bit buggy, and not 100% of Bruce funcationality is fully supported
 
-**Notes: Based on our testing (18.June.2025), Bruce firmware can be load into the standalone section of Double Barrel / Double Barrel 5G. but it is still a bit buggy, and not 100% of Bruce funcationality is fully supported**
+**Notes: Based on our testing (18.June.2025), Bruce firmware can be load into the standalone section of Double Barrel / Double Barrel 5G. but it is still a bit buggy, and not 100% of Bruce funcationality is fully supported, which is understandable**
 
 1. [An ESP32 programmer](https://github.com/HoneyHoneyTeam/ESP-Programmer-for-Slim-Jim-Double-Barrel-Double-Barrel-5G) is included in the package. Connecting the programmer to the GPIO port located in the lower-right corner of the device, as shown in the following picture.
 
@@ -168,9 +167,11 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
 ## How to upgrade BW16 firmware 
 <details>
 
-When we shipd out the Double Barrel 5G, the BW16 has been pre-loaded one of the 5G firmware. This firmware is compatiable with the FAP call [ 5G wifi deauth ](https://github.com/HoneyHoneyTeam/ESP32-Marauder-Double-Barrel-5G/blob/main/Assets/5G.fap) 
+1. When we shipped out the Double Barrel 5G, the BW16 was pre-loaded with one of the 5G firmware versions. This firmware is compatible with the FAP call [5G WiFi deauth](https://github.com/HoneyHoneyTeam/ESP32-Marauder-Double-Barrel-5G/blob/main/Assets/5G.fap).
 
-If you would like to explore more on the 5G side of the business, you could load BW16 with [delfyrtl firmware and its compatiable flipper APP](https://github.com/gorebrau/delfyRTL) 
+2. Regarding the effectiveness and functionality of the BW16 kit on 5G WiFi networks: it works and is quite effective. However, its functionality is limited to scanning and deauthentication. There may be other binaries or firmware options available, such as Evil Portal or CLI support, but due to time constraints and limited manpower, we haven't been able to test them all. That said, we believe the open-source community will likely develop additional tools, as around 90% of the code is compatible and reuseable.
+
+3. If you would like to explore more on the 5G side of the business, you could load BW16 with [delfyrtl firmware and its compatiable flipper APP](https://github.com/gorebrau/delfyRTL) 
 
 **The Delfyrtl GitHub page has a clear description of how to load the firmware, but we will be updating our own version of the loading procedure soon. Please check back in a few days for the latest instructions.  - 19.06.2025 by Anson**
 
