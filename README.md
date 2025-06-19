@@ -26,7 +26,8 @@ First of all, what is the [ESP32 Marauder Double Barrel](https://github.com/Hone
 Due to limitations of the this particular ESP32 chipset, the Marauder currently supports only 2.4 GHz Wi-Fi. However, recent developments with the BW16 Kit / RTL8720DN chipset have shown promising results to 5GHz Wifi. This is exactly what we have implenmented on the 5G cousin of the Double Barrel. 
 
 <br/>
-
+<br/>
+<br/>
 ## Specification of the ESP32 Marauder Double Barrel 5G
 
 
