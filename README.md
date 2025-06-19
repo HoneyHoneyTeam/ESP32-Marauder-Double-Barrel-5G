@@ -9,7 +9,7 @@
 
 > [!NOTE]
 > - Latest update: 19 June 2025 by Anson @ Honey Honey Team
-> - First version is done by John @ Honey Honey Team at 17 June 2025
+> - First version: 17 June 2025 by John @ Honey Honey Team
 > - All procedures and descriptions related to the Flipper Zero herein were validated using Momentum Firmware, version < MNTM-010 30-04-2025 >.
 
 
