@@ -168,7 +168,7 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
 ## How to upgrade BW16 firmware 
 <details>
 <summary> Click the Triangle for more details</summary>
-
+<br/>
 1. When we shipped out the Double Barrel 5G, the BW16 was pre-loaded with one of the 5G firmware versions. This firmware is compatible with the FAP call [5G WiFi deauth](https://github.com/HoneyHoneyTeam/ESP32-Marauder-Double-Barrel-5G/blob/main/Assets/5G.fap).
 
 2. Regarding the effectiveness and functionality of the BW16 kit on 5G WiFi networks: it works and is quite effective. However, its functionality is limited to scanning and deauthentication. There may be other binaries or firmware options available, such as Evil Portal or CLI support, but due to time constraints and limited manpower, we haven't been able to test them all. That said, we believe the open-source community will likely develop additional tools, as around 90% of the code is compatible and reuseable.
