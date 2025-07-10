@@ -185,7 +185,7 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
 
 <details>
 <summary> Click the Triangle for more details</summary>
-
+<br/>
 We believe the 5G FAP is compatible with most firmware versions.
 
 However, there is one caveat. When we checked the latest Unleashed firmware (as of 10 July 2025), we were unable to locate the UART setting for changing the ESP32/8266 GPIO pins (from the default 13/14 to 15/16) in the Unleashed documentation. It’s possible this setting is referred to differently in the Unleashed firmware.
