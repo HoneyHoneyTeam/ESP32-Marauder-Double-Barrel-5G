@@ -8,7 +8,9 @@
 ![Alt text](Assets/images/left.jpg)
 
 > [!NOTE]
-> - Latest update: 19 June 2025 by Anson @ Honey Honey Team
+> - Batch 2 units will be available to order on [Tindie](https://www.tindie.com/products/honeyhoneytrading/esp32-marauder-double-barrel-5g/) from 11 August 2025, and will ship out on Monday, 18 August 2025.
+> - Latest Update: 09 August 2025 by Jay & Anson @ Honey Honey Team - fixing mirror error on GPS setting, 2nd batch availablility and hardware update on the refresher.  
+> - Second update: 19 June 2025 by Anson @ Honey Honey Team
 > - First version: 17 June 2025 by John @ Honey Honey Team
 > - All procedures and descriptions related to the Flipper Zero herein were validated using Momentum Firmware, version < MNTM-010 30-04-2025 >.
 
@@ -36,14 +38,16 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
 	- An 800mAh embedded battery, 
 	- Onboard GPS access
 	- Micro SD card slot, for updating firmware and data storage
-	- 4pin GPIO (3.3V/Tx/Rx/Gnd)
+	- For Batch one unit, 4pin GPIO (3.3V/Tx/Rx/Gnd)
+ 	- From Batch Two, 4Pins GPIO have been replaced by USB-C port 
   	- This part of the device can funcation as a standalone device (i.e., you can use it without Flipper Zero).
    	- The hardware version of this marauder is V6
 
 - **The BW16 / RTL8720DN chipset is controlled by the Flipper Zero, it comes with**
   	- BW16 / RTL8720DN chipset with an external antenna
   	- Dual-Band 5Ghz + 2.4Ghz scanning, de-authentication
-  	- 4pins GPIO 4pin GPIO (3.3V/Tx/Rx/Gnd) for firmware update, or switch different firmware
+  	- For Batch one Unit: 4pins GPIO 4pin GPIO (3.3V/Tx/Rx/Gnd) for firmware update, or switch different firmware
+  	- From Batch Two, 4Pins GPIO have been replaced by USB-C port 
   	- FAP <Flipper App Package> installation is needed, aka copying the FAP into Flipper SD card
   	- More info regarding the funcationality, please check <How to upgrade BW16 firmware > section of this manual
 
@@ -108,9 +112,10 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
   		- DOWN position: GPS is powered by the Flipper Zero's battery.
   	2. On your Flipper Zero, navigate to the main menu.
 	3. Go to: **Momentum** -> **Protocols** -> **GPIO Pins** -> **NWEA GPS UART**.
-	4. Select **Default 13, 14**."
-	5. For testing purpose, Go to **Apps** -> **GPIO** -> **[NMEA]GPS**.
-	6. Acquiring a GPS signal might take up to a minute. The exact time depends on your location and how open or obstructed the sky is.
+	4. Select **Extra 15, 16**.
+	5. If **ESP32/8266 UART** setting is also set as **Extra 15, 16**, please change to **Default 13, 14**. The reason is that only one function can use UART pins 15 and 16 at a time. If both the ESP32 and the GPS are set to use UART 15 and 16, it may cause a functional conflict.
+	6. For testing purpose, Go to **Apps** -> **GPIO** -> **[NMEA]GPS**.
+	7. Acquiring a GPS signal might take up to a minute. The exact time depends on your location and how open or obstructed the sky is.
 
 
 <br/>
@@ -193,6 +198,46 @@ However, there is one caveat. When we checked the latest Unleashed firmware (as 
 We worked around this by first using a Flipper running the Momentum firmware, where we configured the GPIO pins to 15/16. Then, we used the web installer to flash the Unleashed firmware (version 081). In this case, the update process preserved the existing GPIO configuration.
 
 If you’re planning to use Unleashed with the Double Barrel 5G, this could be one way to get it working.
+
+</details>
+
+<br/>
+
+## What we shipout unit with Marauder 1.4.6，even the latest Marauder is 1.8.2 or further - Update at 09 August 2025?
+
+<details>
+<summary> Click the Triangle for more details</summary>
+<br/>
+
+The only reason is that Marauder changed how the touchscreen works after version 1.4.6.
+
+In 1.4.6, it functions like a normal touchscreen.
+
+After 1.4.6, the touchscreen is divided into three sections, and each section acts as one big button:
+	
+ 	Top → UP
+    Middle → ENTER
+    Bottom → DOWN
+
+This change was confusing and counter-intuitive for new users at first, and many thought the device was malfunctioning — which led to a flood of tech support requests.
+
+For that reason, we ship units with version 1.4.6 by default.
+
+That said, you’re free to upgrade or downgrade the Marauder at any time, as long as you download the V6 version of the firmware.
+
+</details>
+
+<br/>
+
+## What is the main difference between Batch one machine and Batch two units - Update at 09 August 2025?
+
+<details>
+<summary> Click the Triangle for more details</summary>
+<br/>
+
+The only main difference is that the 4-pin GPIO connector has been replaced with a USB-C port. This means users can now use a standard USB-C data cable, rather than a specific refresher tool, to enter the chipset’s bootloader mode.
+
+As a result, the refresher is no longer required for reviving the device or upgrading the firmware.
 
 </details>
 
