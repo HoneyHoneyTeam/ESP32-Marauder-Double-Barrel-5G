@@ -98,7 +98,7 @@ Due to limitations of the this particular ESP32 chipset, the Marauder currently 
 	3. Select **Extra 15, 16**.
 
 - Then, The FAP file need to copy into Flipper SD card, as showed in the following. 
-	1. Download the FAP file from [here](Assets/5G.fap) (Right Click and Save AS)
+	1. Download the FAP file from [here](Assets/5G.fap) (Open the link, Click on the Download button on the top right corner of the screen)
  	2. Copy the file into <**you SD card/Apps/GPIO**> directory. You could do so via a Micro SD card reader, or via qFlipper App. 
   	3. Put the SD card back into Flipper, and you should be able to find an APP call **5G wifi Deauth** in through Flipper manual **APPS** -> **GPIO** -> **5G wifi deauth**
   	   
