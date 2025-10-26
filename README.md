@@ -1,4 +1,4 @@
-# ESP32 Marauder - Double Barrel 5G User Manual
+# ESP32 Marauder - Double Barrel 5G (BW16) User Manual 
 
 ![Alt text](Assets/images/front.with.Flipper.jpg)
 ![Alt text](Assets/images/Back.with.description.jpg)
